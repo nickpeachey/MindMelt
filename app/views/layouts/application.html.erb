@@ -61,9 +61,8 @@
     <div class="container">
         <div class="row">
           <div class="span9">
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
-            <%= bootstrap_flash %>
+            <%= render 'layouts/login_status' %>
+            <%= render 'layouts/messages' %>
             <%= yield %>
           </div>
           <div class="span3">
